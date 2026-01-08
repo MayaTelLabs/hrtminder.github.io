@@ -80,6 +80,19 @@
           font-weight:bold;
           cursor:pointer;
         }
+
+        /* Footer / credits area under the save button */
+        .footer-note {
+          font-size: 0.90em;
+          color: rgba(255,255,255,0.85);
+          text-align: center;
+          margin-top: 12px;
+          line-height: 1.2;
+        }
+        .footer-note .credits {
+          margin-top: 6px;
+          color: rgba(255,255,255,0.85);
+        }
     </style>
 </head>
 <body>
@@ -132,9 +145,7 @@
           <button id="owm_test_button" class="owm-test-button" type="button">Test key</button>
         </div>
         <div id="owm_status" class="owm-status"></div>
-        <div class="small-note">Leave blank to use the bundled default key (not recommended for public builds).</div>
       </div>
-
       <div class="setting-row" id="temp-format-row">
         <div class="label" style="font-weight:400;">Units</div>
         <div class="controls">
@@ -280,6 +291,14 @@
     </div>
 
     <button id="saveButton">save & exit</button>
+    <div class="footer-note" aria-hidden="false">
+      HRTminder - maya ventura (www.mayawalkwith.me) 2026
+      <div class="credits">thanks to lisbeth and emma for UI and UX opinions, thanks to yael for verifying my list of timezones was good, thanks to annika and lucy for looking at this project and saying to me "you know, you're almost making me want a pebble".</div>
+      <div class="credits">fonts in use in this project: U001 by URW Type Foundary, Inter by Rasmus Andersson, Jost* by indestructible type*/Owen Earl, and DINish by Bert Driehuis. all are open-source and freely licensed fonts.</div>
+      <div class="credits">thanks to several other popular Pebble watchfaces for giving me the inspiration - and way better code than I could write, but could reference - to make this a coherent design, namely "Casio-WV-58DE" by Jack T. (specifically Gigahawk's fork of it), "Last Time" by mgerb, "91Dub" by orviwan, and "DIN Clean" by Christophe Jeannette. </div>
+      <div class="credits">thanks to both Rebble.io and RePebble/Core Devices for the work they're doing for this platform.</div>        
+    </div>
+
 </div>
 
 <script>
